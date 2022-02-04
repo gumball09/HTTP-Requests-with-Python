@@ -1,0 +1,32 @@
+1) GET VS. HEAD REQUESTS
+- GET: to obtain information/content of a particular URL
+- HEAD: to obtain metadata of the URL, not the content (these metadata resides in the headers)
+
+/* SOLUTION */
+- Similarities:
+    + Headers returned by both requests are IDENTICAL
+    + Both are idempotent operations, causing no changes in the server
+
+- Differences:
+    + Response to a HEAD request does not have a body
+    + HEAD is meant to be used to get METADATA for a resource (format, size, user-agent, content-type)
+
+2) PUT VS. DELETE
+- PUT: Make changes to existing resources by overwritting previous values with current ones
+- DELETE: Remove resources from the server
+
+/* SOLUTION */
+- PUT:
+    + Create or replaces a value/ resource at the target
+    + Is idempotent, either create a resource not exist or entirely replace existing resource
+    + If called many times, the same affect will take place on the same resource
+ 
+- DELETE:
+    + Delete a file or resource at specified URL endpoint
+
+3) VIEW REDIRECT HISTORY
+- GET REQUEST
+    response = requests.get(<url>, <options>
+- REDIRECT HISTORY (A LIST OF REDIRECTS)
+    response.history
+    
