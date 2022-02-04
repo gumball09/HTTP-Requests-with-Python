@@ -17,3 +17,5 @@ All is done through self-learning, with the help of Jupyter Notebook and venv
 - Status codes
 - Redirects & Timeouts
 - Exceptions and Handling exceptions
+
+There is part that shows how to download image, converting from byte to jpeg then download as png (in Encoding & Binary Response)
